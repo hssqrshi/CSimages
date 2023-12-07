@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+        </div>
+        <div class="nav-right">
+            <img src="menu-icon.png" onclick="toggleMenu()">
+            <div class="menu" id="menu">
+                <h3>Main Menu</h3>
+                <hr>
+                <a href="#" class="sub-menu-links">
+                    <p>About us</p>
+                    <div>▸</div>
+                </a>
+                <a href="#" class="sub-menu-links">
+                    <p>Contact us</p>
+                    <div>▸</div>
+                </a>
+                <a href="#" class="sub-menu-links">
+                    <p>Disclaimer</p>
+                    <div>▸</div>
+                </a>
+                <a href="#" class="sub-menu-links">
+                    <p>Privacy Policy</p>
+                    <div>▸</div>
+                </a>
+                <a href="#" class="sub-menu-links">
+                    <p>Terms and Conditions </p>
+                    <div>▸</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="overlay">
+            <div class="intro">
+                <h1>CS IMAGE</h1>
+                <h5>Get Custom Size Images</h5>
+            </div>
+            <div class="search">
+                <div class="box">
+                    <label for="width">Width:</label>
+                    <input type="number" maxlength="4" class="inp-w" id="width" value="900">
+                </div>
+                <div class="box">
+                    <label for="height">Height:</label>
+                    <input type="number" maxlength="4" class="inp-h" id="height" value="900">
+                </div>
+                <div class="box">
+                    <label for="name">Image:</label>
+                    <input type="words" class="inp-i" id="name" spellcheck="true" placeholder="Search Image Here">
+                </div>
+            </div>
+            <div class="s-btn"><button class="search-btn" type="search">Search Image🔎</button></div>
+
+        </div>
+    </div>
+    <div class="posts"  id="images">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+        <img src="https://source.unsplash.com/900x900/?bg">
+    </div>
+   <div> <div class="loadmore"><button class="lm" onclick="loadmore()"> Load More</button></div></div>
+
+
+
+    <div id="imageModal" class="modal">
+        <img id="modalImage" class="modal-content" src="" alt="Opened Image">
+        <div class="btns">
+            <div class="download-btn-container">
+                <button class="d-btn" onclick="downloadImage()">Download</button>
+            </div>
+            <div class="close-btn-container">
+                <button onclick="closeModal()" class="d-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
